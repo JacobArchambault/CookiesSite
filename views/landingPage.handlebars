@@ -1,0 +1,21 @@
+<h2>Welcome {{user}}</h2>
+
+<p id='timeParagraph'></p>
+
+{{#if msg}}
+   {{msg}}
+{{/if}}
+
+<p>Please select one of the choices from the menu above</p>
+
+<form action='/logout' method='post'>
+   <p><input type='submit' value = "Log Out">
+</form>
+
+<script>
+  var now = new Date();
+  var d = now.toLocaleDateString();
+  var t = now.toLocaleTimeString();
+  
+  document.getElementById('timeParagraph').innerHTML = "Date/Time: " + d + " : " + t;
+</script>

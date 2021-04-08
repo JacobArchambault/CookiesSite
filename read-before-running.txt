@@ -1,0 +1,8 @@
+assuming package.json already exists, we don't need to run npm init -y
+
+you need to install 4 dependencies. the new one is cookie-parser.
+
+run npm install express express-handlebars body-parser cookie-parser --save
+
+no database in this example, and no templates.
+
